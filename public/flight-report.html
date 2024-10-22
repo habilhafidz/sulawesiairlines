@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Report</title>
+    <link rel="stylesheet" href="flight-pr.css"> <!-- Menggunakan CSS yang sama -->
+</head>
+<body>
+<div id="notification" class="notification hidden"></div>
+<div class="back-button-container">
+    <a href="/" class="back-button report-back-button">&lt; Back</a>
+</div>
+<img src="branding.png" alt="Branding" class="branding">
+<div id="flight-report">
+    <h2>Flight Report</h2>
+    <table id="flight-report-table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Flight</th>
+            <th>FT</th>
+            <th>Nickname</th>
+            <th>Proof</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Data laporan akan ditambahkan di sini -->
+        </tbody>
+    </table>
+    <div class="pagination-container" id="pagination"></div>
+</div>
+<!-- Modal untuk menampilkan Proof -->
+<div id="proofModal" class="modal-container">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="proofImage" class="modal-content" />
+    <a id="downloadButton" class="download-button" href="#" download style="display:none;">Download</a>
+</div>
+
+<div class="add-report-container">
+    <a href="javascript:void(0)" class="add-report-button" onclick="toggleModal()">+ Add Report</a>
+</div>
+
+<div id="addReportModal" class="modal-container">
+    <div class="modal-content">
+        <span class="close-modal" onclick="toggleModal()">&times;</span>
+        <h2>Add Report</h2>
+        <form id="reportForm" enctype="multipart/form-data">
+            <input type="text" id="date" name="date" class="modal-input" placeholder="YYYY-MM-DD">
+            <input type="text" id="flight" name="flight" class="modal-input" placeholder="SA 000">
+            <input type="text" id="ft" name="ft" class="modal-input" placeholder="00:00h">
+            <input type="text" id="nickname" name="nickname" class="modal-input" placeholder="Nickname">
+            <input type="file" id="proof" name="proof" class="modal-input" accept="image/*" placeholder="Proof">
+            <button type="button" class="modal-submit" onclick="submitReport()">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

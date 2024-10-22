@@ -1,0 +1,372 @@
+/* CSS untuk Tabel Desain 3 */
+#flight-report-table {
+    width: 80%; /* Mengatur lebar tabel */
+    border-collapse: collapse;
+    margin: 0px auto; /* Margin atas-bawah 20px dan margin kiri-kanan auto untuk memusatkan */
+    margin-top: 10px; /* Mengurangi jarak antara teks dan tabel */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f2ebe5; /* Mengubah warna latar belakang tabel menjadi putih */
+}
+
+#flight-report-table th, #flight-report-table td {
+    padding: 12px;
+    text-align: left;
+    border: none;
+}
+
+#flight-report-table th {
+    background-color: #bf9b7a; /* Warna Dasar */
+    color: white;
+    font-weight: bold;
+}
+
+#flight-report-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#flight-report-table tr:hover {
+    background-color: #e0c6b3; /* Warna Terang */
+}
+
+/* Container for pagination */
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the pagination buttons */
+.pagination-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #bf9b7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #e0c6b3;
+    color: black;
+}
+
+/* Style for disabled pagination buttons */
+.pagination-button.disabled {
+    background-color: #ccc; /* Warna abu-abu untuk tombol yang dinonaktifkan */
+    cursor: not-allowed; /* Menampilkan kursor yang menunjukkan tidak bisa diklik */
+    pointer-events: none; /* Menonaktifkan event klik */
+}
+
+/* Style for the current page indicator */
+.pagination-info {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    color: #333;
+}
+
+#flight-plan h2 {
+    text-align: left; /* Mengatur teks ke kiri */
+    margin: 0; /* Menghilangkan margin untuk mendekatkan ke tabel */
+    padding-bottom: 5px; /* Jarak antara teks dan tabel */
+    font-family: 'Arial', sans-serif; /* Ganti 'Arial' dengan nama font yang diinginkan */
+    font-size: 24px; /* Ukuran font */
+    color: #000; /* Warna teks */
+    width: 80%; /* Mengatur lebar h2 sama dengan lebar tabel */
+    margin-left: auto; /* Memusatkan teks di sisi kiri */
+    margin-right: auto; /* Memusatkan teks di sisi kiri */
+    margin-top: 100px; /* Jarak dari atas untuk menurunkan teks */
+}
+
+#flight-plan-table {
+    width: 80%; /* Mengatur lebar tabel */
+    border-collapse: collapse;
+    margin: 20px auto; /* Margin atas-bawah 20px dan margin kiri-kanan auto untuk memusatkan */
+    margin-top: 10px; /* Mengurangi jarak antara teks dan tabel */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Mengubah warna latar belakang tabel menjadi putih */
+}
+
+#flight-plan-table th, #flight-plan-table td {
+    padding: 12px;
+    text-align: left;
+    border: none;
+}
+
+#flight-plan-table th {
+    background-color: #bf9b7a; /* Warna Dasar */
+    color: white;
+    font-weight: bold;
+}
+
+#flight-plan-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#flight-plan-table tr:hover {
+    background-color: #e0c6b3; /* Warna Terang */
+}
+
+#flight-report h2 {
+    text-align: left; /* Mengatur teks ke kiri */
+    margin: 0; /* Menghilangkan margin untuk mendekatkan ke tabel */
+    padding-bottom: 5px; /* Jarak antara teks dan tabel */
+    font-family: 'Arial', sans-serif; /* Ganti 'Arial' dengan nama font yang diinginkan */
+    font-size: 24px; /* Ukuran font */
+    color: #000; /* Warna teks */
+    width: 80%; /* Mengatur lebar h2 sama dengan lebar tabel */
+    margin-left: auto; /* Memusatkan teks di sisi kiri */
+    margin-right: auto; /* Memusatkan teks di sisi kiri */
+    margin-top: 100px; /* Jarak dari atas untuk menurunkan teks */
+}
+
+/* CSS khusus untuk modal gambar */
+#proofModal {
+  display: none;
+  position: fixed;
+  z-index: 1001; /* Pastikan berada di atas elemen lain */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Latar belakang hitam transparan */
+  justify-content: center;
+  align-items: center;
+}
+
+#proofModal .modal-content {
+  position: relative; /* Tambahkan ini untuk konteks posisi tombol close */
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+
+#proofModal .close-modal {
+  position: absolute;
+  top: 40px; /* Jarak dari atas modal */
+  right: 20%; /* Jarak dari sisi kanan gambar */
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer; /* Ganti cursor saat hover */
+}
+
+#proofModal .close-modal:hover {
+  color: #bbb; /* Ubah warna saat hover */
+}
+
+#proofModal .download-button {
+  position: absolute;
+  bottom: 40px;
+  right: 20%px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Warna hijau */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#proofModal .download-button:hover {
+  background-color: #45a049; /* Warna hijau gelap saat hover */
+}
+
+#proofModal .close:hover, #proofModal .close:focus {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.add-report-container {
+    text-align: center; /* Memusatkan tombol */
+    margin: 20px 0; /* Jarak di atas dan bawah tombol */
+}
+
+.add-report-button {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: #ffffff; /* Mengatur warna teks tombol */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px 20px; /* Jarak di dalam tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut yang melengkung */
+    background-color: #bf9b7a; /* Warna latar belakang tombol */
+    transition: background-color 0.3s, color 0.3s; /* Transisi efek hover */
+}
+
+.add-report-button:hover {
+    background-color: #e0c6b3; /* Warna latar belakang saat hover */
+    color: black; /* Warna teks saat hover */
+}
+
+/* Container Modal Tambah Report */
+#addReportModal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Konten Modal Tambah Report */
+#addReportModal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Tombol Tutup Modal Tambah Report */
+#addReportModal .close-modal {
+    background-color: #bf9b7a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addReportModal .close-modal:hover {
+    background-color: #1c2185; /* Warna tombol saat hover */
+}
+
+/* Tombol Add Report */
+.add-report-button {
+    display: inline-block;
+    background-color: #bf9b7a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-report-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Input dalam Modal */
+.modal-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bf9b7a; /* Warna tombol */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c2185; /* Warna tombol saat hover */
+}
+
+body {
+    background-color: #f4eee8; /* Mengubah warna latar belakang */
+    color: #333; /* Mengatur warna teks agar kontras dengan latar belakang */
+}
+
+/* CSS untuk tombol kembali di flight-report.html dan flight-plan.html */
+
+.back-button-container {
+    margin: 20px; /* Atur jarak di sekitar tombol */
+}
+
+.back-button {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: #bf9b7a; /* Mengatur warna teks tombol */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px 15px; /* Jarak di dalam tombol */
+    border: 1px solid #bf9b7a; /* Mengatur border */
+    border-radius: 5px; /* Sudut yang melengkung */
+    background-color: white; /* Latar belakang putih */
+    transition: background-color 0.3s, color 0.3s; /* Transisi efek hover */
+}
+
+.back-button:hover {
+    background-color: #bf9b7a; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+.notification {
+    position: fixed;
+    top: -100px; /* Mulai di luar tampilan */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green; /* Warna untuk notifikasi sukses secara default */
+    color: white; /* Warna teks */
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1010;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Efek transisi */
+    opacity: 0; /* Mulai tidak terlihat */
+}
+
+.notification.show {
+    top: 20px; /* Posisi akhir yang terlihat */
+    opacity: 1; /* Pastikan terlihat */
+    transition: top 0.5s ease, opacity 0.5s ease; /* Efek transisi saat muncul */
+}
+
+.notification.error {
+    background-color: red;
+}
+
+.notification.success {
+    background-color: green;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px; /* Posisi awal di luar tampilan */
+    }
+    to {
+        top: 20px; /* Posisi akhir yang terlihat */
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 20px;
+    }
+    to {
+        top: -100px;
+    }
+}
+
+.notification.slide-out {
+    animation: slideUp 0.5s forwards;
+}
+
+.branding {
+    position: absolute; /* Posisi absolut untuk mengatur logo di lokasi yang diinginkan */
+    top: 20px; /* Sesuaikan dengan jarak dari atas halaman */
+    right: 20px; /* Sesuaikan dengan jarak dari sisi kanan halaman */
+    width: 250px; /* Atur lebar gambar sesuai keinginan */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    z-index: 1000; /* Pastikan logo terlihat di atas elemen lain */
+}

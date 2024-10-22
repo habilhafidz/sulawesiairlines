@@ -1,0 +1,190 @@
+body {
+    background-color: #f6f0ec; /* Warna dasar */
+    color: #ffffff; /* Warna teks putih untuk kontras */
+    font-family: Arial, sans-serif; /* Font default */
+    margin: 0;
+    padding: 0;
+}
+
+.back-button-container {
+    margin: 20px; /* Atur jarak di sekitar tombol */
+}
+
+.back-button {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: #bf9b7a; /* Mengatur warna teks tombol */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px 15px; /* Jarak di dalam tombol */
+    border: 1px solid #bf9b7a; /* Mengatur border */
+    border-radius: 5px; /* Sudut yang melengkung */
+    background-color: white; /* Latar belakang putih */
+    transition: background-color 0.3s, color 0.3s; /* Transisi efek hover */
+}
+
+.back-button:hover {
+    background-color: #bf9b7a; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+.branding {
+    position: absolute; /* Posisi absolut untuk mengatur logo di lokasi yang diinginkan */
+    top: 20px; /* Sesuaikan dengan jarak dari atas halaman */
+    right: 20px; /* Sesuaikan dengan jarak dari sisi kanan halaman */
+    width: 250px; /* Atur lebar gambar sesuai keinginan */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    z-index: 1000; /* Pastikan logo terlihat di atas elemen lain */
+}
+
+.container {
+    max-width: 800px; /* Lebar maksimum kontainer */
+    margin: 120px auto; /* Tengah secara horizontal */
+    padding: 20px;
+    background-color: #3b2b1c; /* Warna kedua untuk kontainer */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+header {
+    text-align: center; /* Teks di tengah */
+    margin-bottom: 20px; /* Jarak bawah header */
+}
+
+header h1 {
+    color: #bf9b7a;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+.card p {
+    margin: 10px 0; /* Jarak antar paragraf */
+}
+
+.changerole-container {
+    float: right; /* Aligns the button to the right */
+}
+
+.changeroleButton {
+    display: inline-block; /* Mengubah tampilan menjadi blok inline agar memiliki padding */
+    color: #ffffff; /* Warna teks */
+    background-color: #1c2185; /* Warna biru untuk tombol logout */
+    padding: 10px 15px; /* Padding untuk ukuran tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    border-radius: 5px; /* Sudut membulat */
+    margin-top: 15px; /* Jarak dari elemen di atas */
+    transition: background-color 0.4s, transform 0.2s; /* Animasi */
+}
+
+.changeroleButton:hover {
+    background-color: #d43039; /* Ubah warna latar belakang saat di-hover menjadi merah */
+    transform: scale(1.05); /* Sedikit membesar saat di-hover */
+}
+
+.logoutButton {
+    display: inline-block; /* Mengubah tampilan menjadi blok inline agar memiliki padding */
+    color: #ffffff; /* Warna teks */
+    background-color: #1c2185; /* Warna biru untuk tombol logout */
+    padding: 10px 15px; /* Padding untuk ukuran tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    border-radius: 5px; /* Sudut membulat */
+    margin-top: 15px; /* Jarak dari elemen di atas */
+    transition: background-color 0.4s, transform 0.2s; /* Animasi */
+}
+
+/* .........modal......... */
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang gelap */88
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rolechange {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antar kotak */
+    align-items: center;
+}
+
+.role-button {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Memenuhi lebar penuh */
+    max-width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.role-button:hover {
+    background-color: #bf9b7a;
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Menempatkan di sudut kanan atas */
+    background: none; /* Hapus background jika ada */
+    border: none; /* Hapus border */
+    font-size: 24px; /* Ukuran ikon close */
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ff6347; /* Ubah warna saat hover */
+}
+
+/* .........modal end......... */
+
+.logoutButton i {
+    margin-left: 8px; /* Jarak antara teks dan ikon */
+}
+
+.logoutButton:hover {
+    background-color: #d43039; /* Ubah warna latar belakang saat di-hover menjadi merah */
+    transform: scale(1.05); /* Sedikit membesar saat di-hover */
+}

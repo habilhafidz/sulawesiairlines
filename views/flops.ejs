@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flops - Sulawesi Airlines</title>
+    <link rel="stylesheet" href="flops.css">
+</head>
+<body>
+<div class="back-button-container">
+    <a href="/" class="back-button report-back-button">&lt; Back</a>
+</div>
+<img src="branding.png" alt="Branding" class="branding">
+<div class="container">
+    <h1>Chart</h1>
+    <div class="region">
+        <div class="column">
+            <h2>Sulawesi:</h2>
+            <ul>
+                <li><a href="/flops/WAAA">WAAA Makassar Int'l</a></li>
+                <li><a href="/flops/WAWW">WAWW Kendari</a></li>
+                <li><a href="/flops/WAMM">WAMM Manado Int'l</a></li>
+                <!-- Tambah bandara lainnya -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Jawa:</h2>
+            <ul>
+                <li><a href="/flops/WIII">WIII Jakarta Int'l</a></li>
+                <li><a href="/flops/WAHI">WAHI Yogya Int'l</a></li>
+                <li><a href="/flops/WARR">WARR Surabaya</a></li>
+                <!-- Tambah bandara lainnya -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Papua:</h2>
+            <ul>
+                <li><a href="/flops/WASS">WASS Sorong</a></li>
+                <li><a href="/flops/WAJJ">WAJJ Jayapura</a></li>
+                <li><a href="/flops/WAYY">WAYY Timika Int'l</a></li>
+                <!-- Tambah bandara -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Kalimantan:</h2>
+            <ul>
+                <li><a href="/flops/WALS">WALS Samarinda</a></li>
+                <li><a href="/flops/WAGG">WAGG Palangkaraya</a></li>
+                <li><a href="/flops/WIOO">WIOO Pontianak</a></li>
+                <!-- Tambah bandara -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Maluku:</h2>
+            <ul>
+                <li><a href="/flops/WAPP">WAPP Ambon</a></li>
+                <li><a href="/flops/WAEE">WAEE Ternate</a></li>
+                <li><a href="/flops/WAPF">WAPF Tual</a></li>
+                <!-- Tambah bandara -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Nusa Tenggara:</h2>
+            <ul>
+                <li><a href="/flops/WADL">WADL Lombok Int'l</a></li>
+                <li><a href="/flops/WATT">WATT Kupang</a></li>
+                <li><a href="/flops/WATO">WATO Badjo</a></li>
+                <!-- Tambah bandara -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Sumatra:</h2>
+            <ul>
+                <li><a href="/flops/WIPP">WIPP Palembang</a></li>
+                <li><a href="/flops/WITT">WITT Banda Aceh Int'l</a></li>
+                <li><a href="/flops/WIMM">WIMM Medan</a></li>
+                <!-- Tambah bandara -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>International:</h2>
+            <ul>
+                <li><a href="/flops/LTFM">LTFM Istanbul</a></li>
+                <li><a href="/flops/RJBB">RJBB Kansai</a></li>
+                <li><a href="/flops/EHAM">EHAM Amsterdam</a></li>
+                <!-- Tambah bandara -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section untuk menampilkan detail bandara -->
+    <div id="airport-details" class="hidden">
+        <h1 id="airport-name">Airport Name</h1>
+        <div class="info">
+            <div class="airport-info">
+                <h2>Airport Info</h2>
+                <p><strong>ICAO / IATA:</strong> <span id="icao-iata"></span></p>
+                <p><strong>Name:</strong> <span id="name"></span></p>
+                <p><strong>City, country:</strong> <span id="city-country"></span></p>
+                <p><strong>Elevation:</strong> <span id="elevation"></span></p>
+                <p><strong>Type:</strong> <span id="type"></span></p>
+                <p><strong>IFR:</strong> <span id="ifr"></span></p>
+            </div>
+
+            <div class="runways">
+                <h2>Runways</h2>
+                <div id="runways-list"></div>
+            </div>
+
+            <div class="airport-chart">
+                <h2>Airport Chart</h2>
+                <ul id="chart-list"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+<footer class="avp">
+    <div class="footer-content">
+        <p>Charts by <img src="avp.png" alt="Logo" style="height: 50px; vertical-align: middle;"></p>
+        <p>Sponsored by <img src="cluvatic.png" alt="Logo" style="height: 30px; vertical-align: middle;"></p>
+    </div>
+</footer>
+
+</html>

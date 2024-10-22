@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="myaccount.css">
+</head>
+<body>
+<div class="back-button-container">
+    <a href="/" class="back-button">&lt; Back</a>
+</div>
+<img src="branding.png" alt="Branding" class="branding">
+<div class="container" id="userData"
+     data-nickname="nickname"
+     data-email="email"
+     data-role="role">
+    <header>
+        <h1>My Account</h1>
+    </header>
+    <div class="card">
+        <div>
+            <p>Nickname: <span id="nickname"></span></p>
+            <p>Role: <span id="role"></span></p>
+            <p>Email: <span id="email"></span></p>
+        </div>
+        <div class="changerole-container">
+            <a href="#" class="changeroleButton" id="changeRoleButton">Change Role</a>
+        </div>
+        <!-- Modal untuk Change Role -->
+        <div id="changeRoleModal" class="modal">
+            <div class="modal-content">
+                <h1>Select Your Role</h1>
+                <div class="rolechange">
+                    <button class="close-btn" onclick="closeMenu()">
+                        <i class="fa-regular fa-square-caret-left"></i>
+                    </button>
+                    <!-- ATC Role Button -->
+                    <div class="role-button" data-role="atc">
+                        <h2>ATC</h2>
+                        <ul>
+                            <li>ATC Access</li>
+                            <li>Flops Access</li>
+                        </ul>
+                    </div>
+                    <!-- Pilot Role Button -->
+                    <div class="role-button" data-role="pilot">
+                        <h2>Pilot</h2>
+                        <ul>
+                            <li>Flight Report Access</li>
+                            <li>ATC Access</li>
+                            <li>Flops Access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logout-container">
+            <a href="#" class="logoutButton">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

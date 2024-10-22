@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Flight Report</title>
+    <link rel="stylesheet" href="flight-pr.css"> <!-- Menggunakan CSS yang sama -->
+</head>
+<body>
+<div class="back-button-container">
+    <a href="/" class="back-button report-back-button">&lt; Back</a>
+</div>
+<img src="branding.png" alt="Branding" class="branding">
+<div id="flight-report">
+    <h2>Flight Report</h2>
+    <table id="flight-report-table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Flight</th>
+            <th>FT</th>
+            <th>Nickname</th>
+            <th>Proof</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Data laporan akan ditambahkan di sini -->
+        </tbody>
+    </table>
+</div>
+
+<div class="add-report-container">
+    <a href="javascript:void(0)" class="add-report-button" onclick="toggleModal()">+ Add Report</a>
+</div>
+
+<div id="addReportModal" class="modal-container">
+    <div class="modal-content">
+        <span class="close-modal" onclick="toggleModal()">&times;</span>
+        <h2>Add Report</h2>
+        <input type="text" id="date" class="modal-input" placeholder="Date 14-10-2024">
+        <input type="text" id="flight" class="modal-input" placeholder="SA 000">
+        <input type="text" id="ft" class="modal-input" placeholder="00:00h">
+        <input type="text" id="nickname" class="modal-input" placeholder="Nickname">
+        <input type="file" id="proof" class="modal-input" accept="image/*" placeholder="Proof">
+        <button class="modal-submit" onclick="submitReport()">Submit</button>
+    </div>
+</div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/flight-reports')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const tableBody = document.getElementById('flight-report-table').getElementsByTagName('tbody')[0];
+                    data.forEach(report => {
+                        const newRow = tableBody.insertRow();
+                        newRow.innerHTML = `
+                            <td>${report.date}</td>
+                            <td>${report.flight}</td>
+                            <td>${report.ft}</td>
+                            <td>${report.nickname}</td>
+                            <td><a href="${report.proof}" target="_blank">Proof Document</a></td>
+                        `;
+                    });
+                })
+                .catch(error => console.error('Error fetching reports:', error));
+        });
+
+        function toggleModal() {
+    var modal = document.getElementById("addReportModal");
+    if (modal.style.display === "flex") {
+        modal.style.display = "none";
+    } else {
+        modal.style.display = "flex"; // Ubah menjadi "flex" untuk memusatkan modal
+    }
+}
+
+// Untuk menutup modal saat klik di luar konten modal
+window.onclick = function(event) {
+    var modal = document.getElementById("addReportModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+function submitReport() {
+    const date = document.getElementById('date').value;
+    const flight = document.getElementById('flight').value;
+    const ft = document.getElementById('ft').value;
+    const nickname = document.getElementById('nickname').value;
+    const proof = document.getElementById('proof').files[0]; // Ambil file yang dipilih
+
+    const formData = new FormData();
+    formData.append('date', date);
+    formData.append('flight', flight);
+    formData.append('ft', ft);
+    formData.append('nickname', nickname);
+    formData.append('proof', proof); // Menambahkan file ke formData
+
+    fetch('/submit-report', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+
+        // Tambahkan data baru ke dalam tabel di flight-report.html
+        const table = document.getElementById('flight-report-table').getElementsByTagName('tbody')[0];
+        const newRow = table.insertRow();
+
+        newRow.innerHTML = `
+            <td>${data.report.date}</td>
+            <td>${data.report.flight}</td>
+            <td>${data.report.ft}</td>
+            <td>${data.report.nickname}</td>
+            <td><a href="${data.report.proof}" target="_blank">Proof Document</a></td>
+        `;
+
+        // Tutup modal setelah pengiriman
+        toggleModal();
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+    </script>
+</body>
+</html>
