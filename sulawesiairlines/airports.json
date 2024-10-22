@@ -1,0 +1,468 @@
+{
+  "WAAA": {
+    "icao": "WAAA",
+    "iata": "UPG",
+    "name": "Sultan Hasanuddin Intl",
+    "city": "Makassar",
+    "country": "Indonesia",
+    "elevation": 44,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "03", "course": "29°", "length": "10,505 ft", "elevation": "38 ft" },
+      { "runway": "13", "course": "130°", "length": "8,202 ft", "elevation": "44 ft" },
+      { "runway": "21", "course": "209°", "length": "10,505 ft", "elevation": "41 ft" },
+      { "runway": "31", "course": "310°", "length": "8,202 ft", "elevation": "36 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAAA.png" }
+    ]
+
+  },
+  "WAWW": {
+    "icao": "WAWW",
+    "iata": "KDI",
+    "name": "Haluoleo Airport",
+    "city": "Kendari",
+    "country": "Indonesia",
+    "elevation": 128,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "17", "course": "17°", "length": "7,500 ft", "elevation": "128 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAWW.png" }
+    ]
+  },
+  "WAMM": {
+    "icao": "WAMM",
+    "iata": "MDC",
+    "name": "Sam Ratulangi",
+    "city": "Manado",
+    "country": "Indonesia",
+    "elevation": 328,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "18", "course": "182°", "length": "8,694 ft", "elevation": "328 ft" },
+      { "runway": "36", "course": "2°", "length": "8,694 ft", "elevation": "328 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAMM.png" }
+    ]
+  },
+
+
+
+  "WIII": {
+    "icao": "WIII",
+    "iata": "CGK",
+    "name": "Soekarno Hatta Intl",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "elevation": 34,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "06", "course": "67°", "length": "9,843 ft", "elevation": "29 ft" },
+      { "runway": "07L", "course": "67°", "length": "11,811 ft", "elevation": "29 ft" },
+      { "runway": "07R", "course": "67°", "length": "12,008 ft", "elevation": "34 ft" },
+      { "runway": "24", "course": "247°", "length": "9,843 ft", "elevation": "19 ft" },
+      { "runway": "25L", "course": "247°", "length": "12,008 ft", "elevation": "27 ft" },
+      { "runway": "25R", "course": "247°", "length": "11,811 ft", "elevation": "21 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WIII.png" },
+      { "code": "APC", "description": "Stand T1-2", "image": "/Charts/Z_T1-2_WIII.png"},
+      { "code": "APC", "description": "Stand T3", "image": "/Charts/Z_T3_WIII.png"},
+      { "code": "APC", "description": "Stand Cordinates", "image": "/Charts/Z_C_WIII.png" }
+    ]
+  },
+  "WAHI": {
+    "icao": "WAHI",
+    "iata": "YIA",
+    "name": "Yogyakarta Intl",
+    "city": "Kulon Progo",
+    "country": "Indonesia",
+    "elevation": 24,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "11", "course": "109°", "length": "10,663 ft", "elevation": "24 ft" },
+      { "runway": "29", "course": "289°", "length": "10,663 ft", "elevation": "24 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAHI.png" }
+    ]
+  },
+  "WARR": {
+    "icao": "WARR",
+    "iata": "SUB",
+    "name": "Juanda",
+    "city": "Surabaya",
+    "country": "Indonesia",
+    "elevation": 11,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "10", "course": "98°", "length": "9,843 ft", "elevation": "11 ft" },
+      { "runway": "28", "course": "278°", "length": "9,843 ft", "elevation": "8 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WARR.png" }
+    ]
+  },
+
+
+
+  "WASS": {
+    "icao": "WASS",
+    "iata": "SOQ",
+    "name": "Domine Eduard Osok",
+    "city": "Sorong",
+    "country": "Indonesia",
+    "elevation": 17,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "09", "course": "93°", "length": "8,202 ft", "elevation": "17 ft" },
+      { "runway": "27", "course": "273°", "length": "8,202 ft", "elevation": "16 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WASS.png" }
+    ]
+  },
+  "WAJJ": {
+    "icao": "WAJJ",
+    "iata": "DJJ",
+    "name": "Sentani",
+    "city": "Jayapura",
+    "country": "Indonesia",
+    "elevation": 289,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "12", "course": "124°", "length": "9,843 ft", "elevation": "289 ft" },
+      { "runway": "30", "course": "304°", "length": "9,843 ft", "elevation": "268 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAJJ.png" },
+      { "code": "AGC", "description": "Stands", "image": "/Charts/Z_T_WAJJ.png" }
+    ]
+  },
+  "WAYY": {
+    "icao": "WAYY",
+    "iata": "TIM",
+    "name": "Mozes Kilangin",
+    "city": "Timika",
+    "country": "Indonesia",
+    "elevation": 104,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "12", "course": "119°", "length": "7,841 ft", "elevation": "104 ft" },
+      { "runway": "30", "course": "299°", "length": "7,841 ft", "elevation": "99 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAYY.png" }
+    ]
+  },
+
+
+
+  "WALS": {
+    "icao": "WALS",
+    "iata": "AAP",
+    "name": "Aji Pangeran Tumenggung Pranoto",
+    "city": "Samarinda",
+    "country": "Indonesia",
+    "elevation": 73,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "04", "course": "44°", "length": "7,382 ft", "elevation": "73 ft" },
+      { "runway": "22", "course": "224°", "length": "7,382 ft", "elevation": "73 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WALS.png" }
+    ]
+  },
+  "WAGG": {
+    "icao": "WAGG",
+    "iata": "PKY",
+    "name": "Tjilik Riwut",
+    "city": "Palangka Raya",
+    "country": "Indonesia",
+    "elevation": 40,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "16", "course": "158°", "length": "8,202 ft", "elevation": "40 ft" },
+      { "runway": "34", "course": "338°", "length": "8,202 ft", "elevation": "39 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAGG.png" }
+    ]
+  },
+  "WIOO": {
+    "icao": "WIOO",
+    "iata": "PNK",
+    "name": "Supadio",
+    "city": "Pontianak",
+    "country": "Indonesia",
+    "elevation": 8,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "15", "course": "157°", "length": "8,530 ft", "elevation": "5 ft" },
+      { "runway": "33", "course": "337°", "length": "8,530 ft", "elevation": "8 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WIOO.png" }
+    ]
+  },
+
+
+
+  "WAPP": {
+    "icao": "WAPP",
+    "iata": "AMQ",
+    "name": "Pattimura",
+    "city": "Ambon",
+    "country": "Indonesia",
+    "elevation": 62,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "04", "course": "44°", "length": "8,202 ft", "elevation": "29 ft" },
+      { "runway": "22", "course": "224°", "length": "8,202 ft", "elevation": "39 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAPP.png" }
+    ]
+  },
+  "WAEE": {
+    "icao": "WAEE",
+    "iata": "TTE",
+    "name": "Sultan Babullah",
+    "city": "Ternate",
+    "country": "Indonesia",
+    "elevation": 81,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "14", "course": "141°", "length": "7,546 ft", "elevation": "81 ft" },
+      { "runway": "32", "course": "321°", "length": "7,546 ft", "elevation": "61 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAEE.png" }
+    ]
+  },
+  "WAPF": {
+    "icao": "WAPF",
+    "name": "Karel Sadsuitubun",
+    "elevation": 109,
+    "runways": [
+      { "runway": "13", "course": "0°", "length": "7,710 ft", "elevation": "102 ft" },
+      { "runway": "31", "course": "0°", "length": "7,710 ft", "elevation": "109 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WAPF.png" }
+    ]
+  },
+
+
+
+  "WADL": {
+    "icao": "WADL",
+    "iata": "LOP",
+    "name": "Zainuddin Abdul Madjid",
+    "city": "Praya",
+    "country": "Indonesia",
+    "elevation": 343,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "13", "course": "128°", "length": "10,827 ft", "elevation": "307 ft" },
+      { "runway": "31", "course": "308°", "length": "10,827 ft", "elevation": "343 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WADL.png" },
+      { "code": "APC", "description": "Stands", "image": "/Charts/Z_T_WADL.png" }
+    ]
+  },
+  "WATT": {
+    "icao": "WATT",
+    "iata": "KOE",
+    "name": "El Tari",
+    "city": "Kupang",
+    "country": "Indonesia",
+    "elevation": 345,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "08", "course": "75°", "length": "8,202 ft", "elevation": "345 ft" },
+      { "runway": "26", "course": "255°", "length": "8,202 ft", "elevation": "309 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WATT.png" }
+    ]
+  },
+  "WATO": {
+    "icao": "WATO",
+    "iata": "LBJ",
+    "name": "Komodo",
+    "city": "Labuan Bajo",
+    "country": "Indonesia",
+    "elevation": 238,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "17", "course": "171°", "length": "8,694 ft", "elevation": "238 ft" },
+      { "runway": "35", "course": "351°", "length": "8,694 ft", "elevation": "190 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WATO.png" }
+    ]
+  },
+
+
+
+  "WIPP": {
+    "icao": "WIPP",
+    "iata": "PLM",
+    "name": "Sultan Mahmud Badaruddin II",
+    "city": "Palembang",
+    "country": "Indonesia",
+    "elevation": 49,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "11", "course": "112°", "length": "9,843 ft", "elevation": "49 ft" },
+      { "runway": "29", "course": "292°", "length": "9,843 ft", "elevation": "39 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WIPP.png" }
+    ]
+  },
+  "WITT": {
+    "icao": "WITT",
+    "iata": "BTJ",
+    "name": "Sultan Iskandar Muda",
+    "city": "Banda Aceh",
+    "country": "Indonesia",
+    "elevation": 69,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "17", "course": "169°", "length": "9,843 ft", "elevation": "65 ft" },
+      { "runway": "35", "course": "349°", "length": "9,843 ft", "elevation": "69 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WITT.png" }
+    ]
+  },
+  "WIMM": {
+    "icao": "WIMM",
+    "iata": "KNO",
+    "name": "Kualanamu Intl",
+    "city": "Deli Serdang",
+    "country": "Indonesia",
+    "elevation": 23,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "05", "course": "45°", "length": "12,303 ft", "elevation": "23 ft" },
+      { "runway": "23", "course": "225°", "length": "12,303 ft", "elevation": "20 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/WIMM.png" }
+    ]
+  },
+
+
+
+  "LTFM": {
+    "icao": "LTFM",
+    "iata": "IST",
+    "name": "Istanbul",
+    "city": "Istanbul",
+    "country": "Turkiye",
+    "elevation": 325,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "16L", "course": "174°", "length": "12,303 ft", "elevation": "218 ft" },
+      { "runway": "16R", "course": "174°", "length": "12,303 ft", "elevation": "219 ft" },
+      { "runway": "17L", "course": "174°", "length": "13,451 ft", "elevation": "202 ft" },
+      { "runway": "17R", "course": "174°", "length": "13,451 ft", "elevation": "202 ft" },
+      { "runway": "18", "course": "174°", "length": "10,039 ft", "elevation": "221 ft" },
+      { "runway": "34L", "course": "354°", "length": "12,303 ft", "elevation": "325 ft" },
+      { "runway": "34R", "course": "354°", "length": "12,303 ft", "elevation": "325 ft" },
+      { "runway": "35L", "course": "354°", "length": "13,451 ft", "elevation": "310 ft" },
+      { "runway": "35R", "course": "354°", "length": "13,451 ft", "elevation": "310 ft" },
+      { "runway": "36", "course": "354°", "length": "10,039 ft", "elevation": "309 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/LTFM.png" },
+      { "code": "AGC", "description": "Speed Limit", "image": "/Charts/Z_SL_LTFM.png" },
+      { "code": "APC", "description": "Stands", "image": "/Charts/Z_T_LTFM.png" },
+      { "code": "APC", "description": "Stands", "image": "/Charts/Z_A1_LTFM.png" },
+      { "code": "APC", "description": "Stands", "image": "/Charts/Z_A2_LTFM.png" },
+      { "code": "APC", "description": "Stands", "image": "/Charts/Z_A3_LTFM.png" },
+      { "code": "APC", "description": "Stands", "image": "/Charts/Z_A4-5_LTFM.png" }
+    ]
+  },
+  "RJBB": {
+    "icao": "RJBB",
+    "iata": "KIX",
+    "name": "Kansai Intl",
+    "city": "Kansai",
+    "country": "Japan",
+    "elevation": 17,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "06L", "course": "59°", "length": "13,123 ft", "elevation": "9 ft" },
+      { "runway": "06R", "course": "59°", "length": "11,483 ft", "elevation": "5 ft" },
+      { "runway": "24L", "course": "239°", "length": "11,483 ft", "elevation": "12 ft" },
+      { "runway": "24R", "course": "239°", "length": "13,123 ft", "elevation": "16 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/RJBB.png" },
+      { "code": "AGC", "description": "A380 Route", "image": "/Charts/Z_A380_RJBB.png" },
+      { "code": "AGC", "description": "Stands", "image": "/Charts/Z_T_RJBB.png" }
+    ]
+  },
+
+
+
+  "EHAM": {
+    "icao": "EHAM",
+    "iata": "AMS",
+    "name": "Schiphol",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "elevation": -11,
+    "type": "Public",
+    "ifr": "Yes",
+    "runways": [
+      { "runway": "04", "course": "40°", "length": "6,627 ft", "elevation": "-13 ft" },
+      { "runway": "06", "course": "57°", "length": "11,283 ft", "elevation": "-11 ft" },
+      { "runway": "09", "course": "86°", "length": "11,329 ft", "elevation": "-12 ft" },
+      { "runway": "18C", "course": "182°", "length": "10,827 ft", "elevation": "-12 ft" },
+      { "runway": "18L", "course": "182°", "length": "11,155 ft", "elevation": "-12 ft" },
+      { "runway": "18R", "course": "182°", "length": "12,467 ft", "elevation": "-13 ft" },
+      { "runway": "22", "course": "220°", "length": "6,627 ft", "elevation": "-14 ft" },
+      { "runway": "24", "course": "237°", "length": "11,283 ft", "elevation": "-12 ft" },
+      { "runway": "27", "course": "266°", "length": "11,329 ft", "elevation": "-12 ft" },
+      { "runway": "36C", "course": "2°", "length": "10,827 ft", "elevation": "-12 ft" },
+      { "runway": "36L", "course": "2°", "length": "12,467 ft", "elevation": "-12 ft" },
+      { "runway": "36R", "course": "2°", "length": "11,155 ft", "elevation": "-11 ft" }
+    ],
+    "charts": [
+      { "code": "AGC", "description": "Airport", "image": "/Charts/EHAM.png" }
+    ]
+  }
+}
