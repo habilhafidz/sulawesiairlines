@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Details <%= airportCode %></title>
+    <link rel="stylesheet" href="/airport-details.css">
+</head>
+<body>
+
+    <div class="back-button-container">
+        <a href="/flops" class="back-button">&lt; Back</a>
+    </div>
+
+    <h1>Airport Details <%= airportCode %></h1>
+
+    <div class="container info">
+        <h2>Informasi Bandara</h2>
+        <p>ICAO / IATA: <strong><%= airportData.icao %> / <%= airportData.iata %></strong></p>
+        <p>Nama: <strong><%= airportData.name %></strong></p>
+        <p>Kota, Negara: <strong><%= airportData.city %>, <%= airportData.country %></strong></p>
+        <p>Elevation: <strong><%= airportData.elevation %> ft</strong></p>
+        <p>Tipe: <strong><%= airportData.type %></strong></p>
+        <p>IFR: <strong><%= airportData.ifr %></strong></p>
+    </div>
+
+    <div class="container runway">
+        <h2>Runway</h2>
+        <table>
+            <tr>
+                <th>Runway</th>
+                <th>Course</th>
+                <th>Length</th>
+                <th>Elevation</th>
+            </tr>
+            <% airportData.runways.forEach(runway => { %>
+                <tr>
+                    <td><%= runway.runway %></td>
+                    <td><%= runway.course %></td>
+                    <td><%= runway.length %></td>
+                    <td><%= runway.elevation %></td>
+                </tr>
+            <% }); %>
+        </table>
+    </div>
+
+    <div class="container chart">
+        <h2>Airport Chart</h2>
+        <ul>
+            <% airportData.charts.forEach(chart => { %>
+                <li>
+                    <span><%= chart.code %>: <%= chart.description %></span>
+                    <% if (chart.image) { %>
+                        <img src="<%= chart.image %>" alt="<%= chart.description %>" style="max-width: 100%; height: auto;">
+                        <div class="download-button-container">
+                            <a href="<%= chart.image %>" download class="download-button">Download</a>
+                        </div>
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <div class="footer-button-container">
+        <a href="/flops" class="footer-button">Kembali ke FLOPS</a>
+    </div>
+
+</body>
+</html>
