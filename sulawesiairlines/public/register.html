@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">   <!-- styles.css untuk semua halaman -->
+    <link rel="stylesheet" href="register.css"> <!-- register.css hanya untuk halaman register -->
+</head>
+<body>
+<div class="back-button-container">
+    <a href="/" class="back-button">&lt; Back</a>
+</div>
+<img src="branding.png" alt="Branding" class="branding">
+<div id="errorMessage" class="notification hidden"></div>
+<!-- Elemen notifikasi untuk status pendaftaran -->
+<div id="notification" class="notification hidden"></div>
+<div class="banner"></div>
+<div class="form-container">
+    <h1>Register</h1>
+
+    <!-- Form untuk email dan tombol kirim kode verifikasi -->
+    <form id="registerForm" onsubmit="sendVerificationCode(); return false;">
+        <input type="email" id="emailInput" name="email" placeholder="Email" required>
+        <button id="sendCodeButton" type="submit">Kirim Kode Verifikasi</button>
+    </form>
+
+    <!-- Form untuk pendaftaran setelah mendapatkan kode verifikasi -->
+    <form id="verificationForm" style="display: none;" onsubmit="registerUser(); return false;">
+        <input type="text" name="verificationCode" placeholder="Kode Verifikasi" required>
+        <input type="text" name="nickname" placeholder="Nickname" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Sudah punya akun? <a href="/login">Login di sini</a></p>
+</div>
+
+<script src="script.js"></script> <!-- Link ke file JavaScript -->
+</body>
+</html>

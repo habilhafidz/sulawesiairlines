@@ -1,0 +1,84 @@
+body {
+    background-color: #f4eee8; /* Warna dasar latar belakang */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    height: 200px; /* Tinggi banner */
+    background-color: rgba(191, 155, 122, 100); /* Warna dasar dengan opacity 0.5 */
+    z-index: -1; /* Pastikan banner di belakang konten lainnya */
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 100px auto; /* Centering */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="email"], input[type="text"], input[type="password"] {
+    width: calc(100% - 20px); /* Kurangi lebar untuk padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bf9b7a; /* Warna tombol */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c2185; /* Warna tombol saat hover */
+}
+
+p {
+    text-align: center;
+}
+
+.branding {
+    position: absolute; /* Posisi absolut untuk mengatur logo di lokasi yang diinginkan */
+    top: 20px; /* Sesuaikan dengan jarak dari atas halaman */
+    right: 20px; /* Sesuaikan dengan jarak dari sisi kanan halaman */
+    width: 250px; /* Atur lebar gambar sesuai keinginan */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    z-index: 1000; /* Pastikan logo terlihat di atas elemen lain */
+}
+
+.back-button-container {
+    margin: 20px; /* Atur jarak di sekitar tombol */
+}
+
+.back-button {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: #bf9b7a; /* Mengatur warna teks tombol */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px 15px; /* Jarak di dalam tombol */
+    border: 1px solid #bf9b7a; /* Mengatur border */
+    border-radius: 5px; /* Sudut yang melengkung */
+    background-color: white; /* Latar belakang putih */
+    transition: background-color 0.3s, color 0.3s; /* Transisi efek hover */
+}
+
+.back-button:hover {
+    background-color: #bf9b7a; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}

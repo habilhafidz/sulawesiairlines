@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4eee8;
+    color: #333; /* Mengatur warna teks agar kontras dengan latar belakang */
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center;     /* Memusatkan konten secara vertikal */
+    background-color: #3b2b1c;
+    padding: 10px;
+}
+
+.menu-toggle {
+    position: absolute;
+    left: 10px; /* Tetap di kiri */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; /* Transisi untuk efek smooth */
+    font-size: 24px;
+    color: #bf9b7a;
+}
+
+.menu-toggle:hover {
+    color: #ff6347; /* Ubah warna saat hover */
+    transform: scale(1.1); /* Perbesar sedikit saat hover */
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden offscreen */
+    width: 250px;
+    height: 100%;
+    background-color: #bf9b7a;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 10; /* Make sure it's above other content */
+}
+
+.slide-menu.open {
+    left: 0; /* Slide in */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #bf9b7a; /* Warna latar belakang menu yang lebih cerah */
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    color: #3b2b1c; /* Warna teks lebih gelap untuk kontras yang baik */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.4s, color 0.4s, transform 0.2s; /* Menambahkan transform untuk efek */
+}
+
+nav ul li a:hover {
+    background-color: #e1d1c2; /* Ubah warna latar belakang saat di-hover */
+    color: #1c2185; /* Ubah warna teks saat di-hover */
+    transform: scale(1.05); /* Sedikit membesar saat di-hover */
+}
+
+nav ul li a i {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    font-size: 1.2em; /* Ukuran ikon sedikit lebih besar */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.close-btn:hover {
+    color: #ff6347; /* Ubah warna saat hover */
+}
+
+.pabbalu-image {
+    width: 250px;  /* Ukuran kecil untuk gambar */
+    height: auto;
+}
+
+.banner {
+    position: relative; /* Menjadikan .banner sebagai konteks untuk posisi anak */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan opacity */
+    width: 100%;
+    height: 350px; /* Sesuaikan dengan tinggi yang diinginkan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Agar gambar tidak keluar dari area banner */
+}
+
+/* Media Query untuk Mobile dan Tablet */
+@media only screen and (max-width: 768px) {
+    .banner {
+        height: 100px; /* Tinggi untuk mobile/tablet */
+    }
+}
+
+.banner-image {
+    position: absolute; /* Memposisikan gambar secara absolut di dalam banner */
+    top: 0;
+    left: 0;
+    width: 100%; /* Sesuaikan lebar gambar dengan banner */
+    height: 100%; /* Sesuaikan tinggi gambar dengan banner */
+    object-fit: cover; /* Memastikan gambar terisi dengan baik dalam kotak */
+    opacity: 0.5; /* Atur opacity gambar agar tampak gelap */
+    z-index: 1; /* Memastikan gambar berada di belakang tombol */
+}
+
+.button {
+    position: relative; /* Agar tombol tetap di atas gambar */
+    z-index: 1; /* Pastikan tombol di atas gambar */
+    padding: 10px 20px;
+    color: #000; /* Ubah warna teks jika perlu */
+    background-color: #fff; /* Sesuaikan dengan warna yang Anda inginkan */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #e1d1c2; /* Warna tombol saat hover */
+}
+
+/* Wrapper untuk #about dan #flight-plan */
+.content-wrapper {
+    display: flex; /* Flexbox untuk elemen bersampingan */
+    justify-content: space-between; /* Jarak antar elemen */
+    align-items: flex-start; /* Sejajarkan elemen di bagian atas */
+    gap: 20px; /* Beri jarak antar elemen */
+    margin: 20px 0;
+}
+
+#about {
+    max-width: 700px; /* Atur lebar maksimum sesuai keinginan */
+    text-align: justify; /* Rata kiri */
+    padding: 20px; /* Menambahkan padding jika diperlukan */
+}
+
+#about h2 {
+    font-size: 28px; /* Ukuran font untuk judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+#about p {
+    font-size: 16px; /* Ukuran font untuk paragraf */
+    line-height: 1.5; /* Jarak antar baris */
+    color: #333; /* Warna teks */
+}
+
+#flight-plan {
+    width: 50%; /* Setengah dari lebar kontainer */
+    padding: 20px; /* Untuk memberi ruang di sekitar tabel */
+    margin-right: 13px; /* Tambahkan jarak dari sisi kanan sesuai jarak About dari sisi kiri */
+    margin-top: 20px;
+}
+
+#flight-plan h2 {
+    font-size: 28px; /* Atur ukuran fonsesuai kebutuhan */
+}
+
+#flight-plan-table {
+    width: 100%; /* Tabel memenuhi lebar kontainer flight-plan */
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ebdfd5;
+}
+
+#flight-plan-table th, #flight-plan-table td {
+    padding: 12px;
+    text-align: left;
+    border: none;
+}
+
+#flight-plan-table th {
+    background-color: #3b2b1c;
+    color: #bf9b7a;
+    font-weight: bold;
+}
+
+#flight-plan-table tr:nth-child(even) {
+    background-color: #eee4dc;
+}
+
+#flight-plan-table tr:hover {
+    background-color: #e0c6b3;
+}
+
+/* Media Query untuk Mobile */
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack elemen di atas satu sama lain pada layar kecil */
+    }
+
+    #about, #flight-plan {
+        width: 100%; /* Buat lebar elemen penuh di layar kecil */
+        margin-bottom: 20px; /* Tambahkan jarak antar elemen */
+    }
+}
+
+.notification {
+    position: fixed;
+    top: -100px; /* Mulai di luar tampilan */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green; /* Warna untuk notifikasi sukses secara default */
+    color: white; /* Warna teks */
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Efek transisi */
+    opacity: 0; /* Mulai tidak terlihat */
+}
+
+.notification.show {
+    top: 20px; /* Posisi akhir yang terlihat */
+    opacity: 1; /* Pastikan terlihat */
+    transition: top 0.5s ease, opacity 0.5s ease; /* Efek transisi saat muncul */
+}
+
+.notification.success {
+    background-color: green;
+}
+
+.social-media h3 {
+    font-family: 'Arial', sans-serif; /* Ganti dengan nama font yang Anda inginkan */
+    font-size: 24px; /* Ukuran font */
+    color: #333; /* Warna font */
+    margin-bottom: 10px; /* Jarak antara h3 dan ikon */
+    text-align: center; /* Memusatkan teks */
+}
+
+section {
+    margin: 20px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; /* Mengatur arah kolom agar h3 di atas */
+    align-items: center; /* Memusatkan konten */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Spacing between icons */
+    margin-top: 20px; /* Menambahkan jarak antara h3 dan ikon */
+}
+
+.social-icons i {
+    font-size: 24px; /* Ukuran ikon */
+    color: #000; /* Warna ikon */
+    transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+.social-icons i:hover {
+    color: #ff6347; /* Ubah warna saat hover */
+}
+
+.footer-strip {
+    height: 10px; /* Height of the strips */
+}
+
+.blue {
+    background-color: #1c2185;
+}
+
+.red {
+    background-color: #d43039;
+}
+
+.notification.error {
+    background-color: red;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px; /* Posisi awal di luar tampilan */
+    }
+    to {
+        top: 20px; /* Posisi akhir yang terlihat */
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 20px;
+    }
+    to {
+        top: -100px;
+    }
+}
+
+.notification.slide-out {
+    animation: slideUp 0.5s forwards;
+}

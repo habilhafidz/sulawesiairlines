@@ -1,0 +1,136 @@
+.branding {
+    position: absolute; /* Posisi absolut untuk mengatur logo di lokasi yang diinginkan */
+    top: 20px; /* Sesuaikan dengan jarak dari atas halaman */
+    right: 20px; /* Sesuaikan dengan jarak dari sisi kanan halaman */
+    width: 250px; /* Atur lebar gambar sesuai keinginan */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    z-index: 1000; /* Pastikan logo terlihat di atas elemen lain */
+}
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4eee8;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h1 {
+    color: #bf9b71;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.region {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1 1 calc(33.33% - 20px); /* 3 kolom */
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #bf9b7a;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #bf9b7a;
+}
+
+.hidden {
+    display: none;
+}
+
+#airport-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.airport-info, .runways, .airport-chart {
+    margin-bottom: 20px;
+}
+
+.back-button-container {
+    margin: 20px; /* Atur jarak di sekitar tombol */
+}
+
+.back-button {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: #bf9b7a; /* Mengatur warna teks tombol */
+    font-size: 16px; /* Ukuran font */
+    padding: 10px 15px; /* Jarak di dalam tombol */
+    border: 1px solid #bf9b7a; /* Mengatur border */
+    border-radius: 5px; /* Sudut yang melengkung */
+    background-color: white; /* Latar belakang putih */
+    transition: background-color 0.3s, color 0.3s; /* Transisi efek hover */
+}
+
+.back-button:hover {
+    background-color: #bf9b7a; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+
+.avp {
+    text-align: center; /* Memusatkan teks di footer */
+    margin-top: 30px; /* Jarak di atas footer */
+    padding: 10px 0; /* Jarak di dalam footer */
+    background-color: #3b2b1c; /* Warna latar belakang footer */
+    color: #bf9b7a; /* Warna teks footer */
+}
+
+.footer-content {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+}
+
+.avp p {
+    font-size: 18px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin: 0 60px; /* Jarak horizontal antar paragraf */
+}
+
+.avp img {
+    margin-left: 5px; /* Jarak antara teks dan logo */
+}
